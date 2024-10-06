@@ -1,0 +1,58 @@
+/* Container to hold all sections */
+.container {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+/* Each section takes the full height of the viewport */
+.section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  transition: transform 0.6s ease-in-out;
+  padding: 20px;
+}
+
+/* Different background colors for each section */
+.create {
+  background-color: #f4e1ff; /* Light purple */
+}
+
+.read {
+  background-color: #e1f7ff; /* Light blue */
+}
+
+.update {
+  background-color: #ffe1e1; /* Light pink */
+}
+
+/* Content styling for center alignment */
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .button-container {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .dropdown-container {
+    display: none;
+  }
+}
+
